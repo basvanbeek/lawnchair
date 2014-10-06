@@ -2,7 +2,7 @@
   "name": "lawnchair",
   "repo": "brianleroux/lawnchair",
   "description": "A lightweight, adaptive, simple and elegant persistence solution.",
-  "version": "0.6.3",
+  "version": "0.6.5",
   "main": "src/Lawnchair.js",
   "scripts": [
     "src/Lawnchair.js"
