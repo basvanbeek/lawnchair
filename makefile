@@ -1,9 +1,10 @@
-VERSION = "0.6.1"
+VERSION = "0.6.5"
 PRIMARY_ADAPTER = "dom"
 SECONDARY_ADAPTER = "window-name"
 
 default: clean build test
-release: clean build min
+release: clean build min 
+amalgamation: clean build concat
 
 clean: 
 	rm -rf ./lib
@@ -66,6 +67,14 @@ test:
 	#open ./test/plugin/callbacks.html
 	#open ./test/plugin/pagination.html
 	#open ./test/plugin/query.html
+
+concat:
+	touch ./lib/lawnchair-amalgamation.js
+	cat ./lib/lawnchair-$(VERSION).js                          >> ./lib/lawnchair-amalgamation.js
+	cat ./lib/lawnchair-adapter-gears-sqlite-$(VERSION).js     >> ./lib/lawnchair-amalgamation.js
+	cat ./lib/lawnchair-adapter-indexed-db-$(VERSION).js       >> ./lib/lawnchair-amalgamation.js
+	cat ./lib/lawnchair-adapter-webkit-sqlite-$(VERSION).js    >> ./lib/lawnchair-amalgamation.js
+	cat ./lib/lawnchair-adapter-html5-filesystem-$(VERSION).js >> ./lib/lawnchair-amalgamation.js
 
 doc:
 	./util/build-docs

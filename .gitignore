@@ -1,5 +1,6 @@
 .DS_Store
 /lib/lawnchair-*
+!/lib/lawnchair-amalgamation.js
 /tmp
 /test/lib/lawnchair*
 node_modules/

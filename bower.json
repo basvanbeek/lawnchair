@@ -3,9 +3,9 @@
   "repo": "brianleroux/lawnchair",
   "description": "A lightweight, adaptive, simple and elegant persistence solution.",
   "version": "0.6.5",
-  "main": "src/Lawnchair.js",
+  "main": "lib/lawnchair-amalgamation.js",
   "scripts": [
-    "src/Lawnchair.js"
+    "lib/lawnchair-amalgamation.js"
   ],
   "keywords": [
     "lawnchair",
