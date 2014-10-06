@@ -74,7 +74,6 @@ concat:
 	cat ./lib/lawnchair-adapter-gears-sqlite-$(VERSION).js     >> ./lib/lawnchair-amalgamation.js
 	cat ./lib/lawnchair-adapter-indexed-db-$(VERSION).js       >> ./lib/lawnchair-amalgamation.js
 	cat ./lib/lawnchair-adapter-webkit-sqlite-$(VERSION).js    >> ./lib/lawnchair-amalgamation.js
-	cat ./lib/lawnchair-adapter-html5-filesystem-$(VERSION).js >> ./lib/lawnchair-amalgamation.js
 
 doc:
 	./util/build-docs
