@@ -13,6 +13,12 @@
     "persistence",
     "collections"
   ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "test",
+    "tests"
+  ],
   "dependencies": {},
   "development": {},
   "license": "MIT"
