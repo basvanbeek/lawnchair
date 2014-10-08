@@ -3,7 +3,7 @@
     "license": "MIT",
     "description": "simple json storage",
     "author": "Brian Leroux",
-    "version": "0.6.4",
+    "version": "0.6.6",
     "repository": {
     "type": "git",
         "url": "https://github.com/brianleroux/lawnchair.git"
